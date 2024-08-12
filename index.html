@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kredit xisoblash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kreditni xisoblash</h1>
+        <p>
+            Kredit summasi (UZS)
+            <input onchange="calculateKredit()" class="input" type="number" id="kredit-summa" min="1" max="100000000" value="10000">
+        </p>
+        <p>
+            Kredit foizi %
+            <input onchange="calculateFoiz()" class="input" type="number" id="kredit-foiz" min="0" max="100" step=".1">
+        </p>
+        <p>
+            Kredit muddati
+            <input onchange="calculateMuddat()" class="input" type="number" id="kredit-muddat" min="6" max="48" value="12">
+        </p>
+        <p class="payment" id="payment">Oylik to‘lov</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
